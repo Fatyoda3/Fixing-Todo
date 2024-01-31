@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<script src="script.js" defer></script>
+		<title>To Do list</title>
+	</head>
+	<body>
+		<div class="head">
+			<h1 id="name">To Do List</h1>
+		</div>
+
+		<br />
+
+		<ul class="task"></ul>
+
+		<div class="tasks">
+			<button class="add-task" onclick="createTask()">
+				click me to add task
+			</button>
+		</div>
+
+		<!-- <div class="notes">
+			<label for="notes">notes</label><input type="text" />
+		</div> -->
+
+		<div class="showPreviousList">
+				<button onclick="oldTask()">show previous tasks</button>
+
+			
+			<ul class="PrevListField">
+				<li></li>
+			</ul>
+
+		</div>
+
+		<button id = "clear-local-storage">nuke</button>
+	</body>
+</html>
