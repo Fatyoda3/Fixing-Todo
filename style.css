@@ -1,240 +1,240 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto+Mono&family=Ubuntu+Mono:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto+Mono&family=Ubuntu+Mono:wght@700&display=swap');
 
 :root {
-	--col-blue: blue;
-	--b-common: 2px solid blue;
+  --col-blue: blue;
+  --b-common: 2px solid blue;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 body {
-	width: 100vw;
-	height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-	background-image: linear-gradient(
-		45deg,
-		rgb(216, 216, 254),
-		rgb(147, 141, 162),
-		#956f9897
-	);
+  background-image: linear-gradient(
+    45deg,
+    rgb(216, 216, 254),
+    rgb(147, 141, 162),
+    #956f9897
+  );
 }
 
 .head {
-	display: flex;
+  display: flex;
 
-	justify-content: center;
+  justify-content: center;
 
-	font-family: "Open Sans", fantasy, Helvetica;
+  font-family: 'Open Sans', fantasy, Helvetica;
 
-	color: #ffffff;
+  color: #ffffff;
 
-	border-bottom: 1vh dashed var(--col-blue);
+  border-bottom: 1vh dashed var(--col-blue);
 
-	background-image: repeating-linear-gradient(
-		45deg,
-		rgb(201, 202, 237),
-		rgb(101, 101, 245),
-		rgb(172, 155, 240)
-	);
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgb(201, 202, 237),
+    rgb(101, 101, 245),
+    rgb(172, 155, 240)
+  );
 }
 
 h1#name {
-	margin: 2vh 5px;
+  margin: 2vh 5px;
 
-	background-color: #a4a4e9;
+  background-color: #a4a4e9;
 
-	padding: 4px 10px;
+  padding: 4px 10px;
 
-	border: 5px solid var(--col-blue);
+  border: 5px solid var(--col-blue);
 
-	border-left: none;
-	border-right: none;
+  border-left: none;
+  border-right: none;
 
-	transform: skewX(-10deg);
+  transform: skewX(-10deg);
 }
 
 button.add-task {
-	font: bold 1.2em "Ubuntu Mono";
+  font: bold 1.2em 'Ubuntu Mono';
 
-	background-color: white;
+  background-color: white;
 
-	border: 3px ridge var(--col-blue);
-	border-left: none;
-	border-right: none;
+  border: 3px ridge var(--col-blue);
+  border-left: none;
+  border-right: none;
 
-	box-shadow: 3px 1px 3px #808080;
-	padding: 4px 10px;
-	margin: 1em 2em;
+  box-shadow: 3px 1px 3px #808080;
+  padding: 4px 10px;
+  margin: 1em 2em;
 
-	cursor: pointer;
+  cursor: pointer;
 
-	transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 button.add-task:hover {
-	border-width: 6px;
-	box-shadow: 5px 2px 9px #626161;
-	align-self: center;
+  border-width: 6px;
+  box-shadow: 5px 2px 9px #626161;
+  align-self: center;
 }
 
 div.tasks {
-	display: flex;
-	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 button.action {
-	margin: 1vh 2vh;
-	padding: 5px 4px;
-	background-color: #a4a4e9;
+  margin: 1vh 2vh;
+  padding: 5px 4px;
+  background-color: #a4a4e9;
 
-	color: white;
-	font: bolder 0.8em "Open Sans";
+  color: white;
+  font: bolder 0.8em 'Open Sans';
 
-	cursor: pointer;
+  cursor: pointer;
 
-	transition: box-shadow 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: box-shadow 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-	border-radius: 3px;
+  border-radius: 3px;
 
-	transform: skew(-3deg);
+  transform: skew(-3deg);
 }
 
 button.action:hover {
-	box-shadow: 3px 2px 3px rgb(90, 86, 86);
+  box-shadow: 3px 2px 3px rgb(90, 86, 86);
 }
 
 .task {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .task li {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
 
-	list-style: none;
-	border-bottom: 2px solid blue;
+  list-style: none;
+  border-bottom: 2px solid blue;
 }
 
 input.taskName {
-	width: 20em;
-	border: var(--b-common);
+  width: 20em;
+  border: var(--b-common);
 
-	text-align: center;
-	font: bolder 1em "Ubuntu Mono";
+  text-align: center;
+  font: bolder 1em 'Ubuntu Mono';
 }
 
 div.notes {
-	position: relative;
+  position: relative;
 
-	bottom: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgb(255, 255, 199);
-	width: 30vw;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 199);
+  width: 30vw;
 
-	height: 25vh;
+  height: 25vh;
 }
 
 div.notes input {
-	border: 2px solid rgb(0, 0, 0);
-	background-color: rgb(255, 255, 199);
-	width: 29vw;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 199);
+  width: 29vw;
 
-	height: 24vh;
+  height: 24vh;
 }
 @media screen and (max-width: 450px) {
-	h1#name {
-		font-size: 4vw;
-	}
+  h1#name {
+    font-size: 4vw;
+  }
 
-	div.head {
-		border-bottom: 0.4vh dashed var(--col-blue);
-	}
-	button.action {
-		font-size: 0.6em;
+  div.head {
+    border-bottom: 0.4vh dashed var(--col-blue);
+  }
+  button.action {
+    font-size: 0.6em;
 
-		padding: 1px 3px;
+    padding: 1px 3px;
 
-		margin: 2px 1px;
-	}
+    margin: 2px 1px;
+  }
 
-	.task li :has(button) {
-		display: grid;
-		grid-template-columns: auto 5em;
-		grid-template-rows: auto;
-	}
+  .task li :has(button) {
+    display: grid;
+    grid-template-columns: auto 5em;
+    grid-template-rows: auto;
+  }
 
-	input.taskName {
-		margin: 5px 10px;
-		width: 12em;
-		background-color: #dfdede;
-	}
+  input.taskName {
+    margin: 5px 10px;
+    width: 12em;
+    background-color: #dfdede;
+  }
 }
 
 .showPreviousList {
-	position: absolute;
-	bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 .showPreviousList > button {
-	font-size: 1em;
+  font-size: 1em;
 
-	width: 10em;
-	height: 4em;
+  width: 10em;
+  height: 4em;
 
-	margin: 2vh 4vh;
-	border: var(--b-common);
-	border-left: none;
-	border-right: none;
+  margin: 2vh 4vh;
+  border: var(--b-common);
+  border-left: none;
+  border-right: none;
 
-	transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .showPreviousList > button:hover {
-	border-top: 5px solid blue;
-	border-bottom: 5px solid blue;
-	box-shadow: 2px 3px 4px rgb(69, 63, 63);
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+  box-shadow: 2px 3px 4px rgb(69, 63, 63);
 }
 
 .showPreviousList ul {
-	display: grid;
+  display: grid;
 
-	grid-template-columns: 10vw;
-	margin: 1vh 2vh;
-	width: 100px;
+  grid-template-columns: 10vw;
+  margin: 1vh 2vh;
+  width: 100px;
 }
 
 .PrevListField li {
-	padding: 1vh 1vh;
-	border: 1px solid var(--col-blue);
-	list-style-type: none;
+  padding: 1vh 1vh;
+  border: 1px solid var(--col-blue);
+  list-style-type: none;
 }
 
 #clear-local-storage {
-	display: none;
-	width: 150px;
-	height: 50px;
-	background-color: red;
-	color: white;
-	font: bolder 1.8rem "Ubuntu mono";
+  display: none;
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  font: bolder 1.8rem 'Ubuntu mono';
 
-	transition: all 1s cubic-bezier(0.175, 0.885, 0.132, 1.275);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.132, 1.275);
 }
 
 #clear-local-storage:hover {
-	cursor: pointer;
-	font-size: 3rem;
-	background: greenyellow;
+  cursor: pointer;
+  font-size: 3rem;
+  background: greenyellow;
 
-	box-shadow: 5px 5px 5px rgb(235, 111, 111);
-	color: green;
+  box-shadow: 5px 5px 5px rgb(235, 111, 111);
+  color: green;
 }
